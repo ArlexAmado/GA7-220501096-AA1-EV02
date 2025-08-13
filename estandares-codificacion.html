@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Estándares de Codificación - JavaScript</title>
+  <link rel="stylesheet" href="/css/estandares.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Estándares de Codificación en JavaScript</h1>
+      <p class="lead">Guía interactiva sobre buenas prácticas, nomenclatura y estilo para escribir código más claro y mantenible.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introducción -->
+    <section class="card">
+      <h2>Introducción</h2>
+      <p>Los estándares de codificación son un conjunto de reglas y recomendaciones que permiten escribir código consistente, legible y fácil de mantener. 
+      Seguir estos estándares mejora la colaboración entre desarrolladores y reduce errores.</p>
+    </section>
+
+    <!-- Nomenclatura -->
+    <section class="card">
+      <h2>Nomenclatura</h2>
+      <h3>Variables y Constantes</h3>
+      <ul>
+        <li>Usar <strong>camelCase</strong> para variables: <code>let userName;</code></li>
+        <li>Usar <strong>UPPER_CASE</strong> para constantes: <code>const MAX_USERS = 100;</code></li>
+      </ul>
+
+      <h3>Clases</h3>
+      <ul>
+        <li>Usar <strong>PascalCase</strong> para clases: <code>class UserProfile {}</code></li>
+      </ul>
+
+      <h3>Métodos y Funciones</h3>
+      <ul>
+        <li>Usar <strong>camelCase</strong>: <code>function calculateTotal() {}</code></li>
+      </ul>
+
+      <h3>Comentarios</h3>
+      <ul>
+        <li>Usar comentarios <strong>claros y concisos</strong>.</li>
+        <li>Comentarios de una línea: <code>// Explicación breve</code></li>
+        <li>Comentarios de bloque: 
+          <pre><code>/* 
+  Explicación más detallada
+  sobre el bloque de código
+*/</code></pre>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Ejemplos -->
+    <section class="card">
+      <h2>Ejemplo de Código</h2>
+      <pre><code>// Constante en mayúsculas
+const MAX_USERS = 100;
+
+// Clase con PascalCase
+class UserProfile {
+  constructor(name) {
+    this.name = name; // Variable en camelCase
+  }
+
+  // Método en camelCase
+  displayInfo() {
+    console.log(`Usuario: ${this.name}`);
+  }
+}
+
+// Uso de la clase
+let userName = "Ana";
+let user = new UserProfile(userName);
+user.displayInfo();
+</code></pre>
+    </section>
+
+    <!-- Ejercicio interactivo -->
+    <section class="card">
+      <h2>Prueba tus Conocimientos</h2>
+      <p>Escribe un nombre válido para una constante en JavaScript:</p>
+      <input id="constInput" placeholder="Ej: MAX_VALUE">
+      <button id="checkBtn" class="primary">Verificar</button>
+      <p id="feedback" class="muted"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Guía de Estándares de Codificación - JavaScript ArlexAmado Sena 2885525</small>
+    </div>
+  </footer>
+
+  <script src="/js/estandares.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Documentación del Código y Control de Versiones</title>
+  <link rel="stylesheet" href="/css/documentacion.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Documentación del Código y Control de Versiones</h1>
+      <p class="lead">Aprende a documentar correctamente tu código y cómo integrarlo con herramientas de versionamiento.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introducción -->
+    <section class="card">
+      <h2>Introducción</h2>
+      <p>La documentación del código es fundamental para que otros desarrolladores (o tú mismo en el futuro) puedan entender, mantener y ampliar un proyecto.  
+      Además, combinada con herramientas de control de versiones como Git, permite un seguimiento ordenado de cambios.</p>
+    </section>
+
+    <!-- Tipos de documentación -->
+    <section class="card">
+      <h2>Tipos de Documentación</h2>
+      <ul>
+        <li><strong>En línea</strong>: Comentarios cortos junto a líneas de código para aclarar su función.</li>
+        <li><strong>De bloque</strong>: Explicaciones más amplias sobre secciones completas.</li>
+        <li><strong>Externa</strong>: Manuales o guías que describen cómo funciona el software.</li>
+      </ul>
+    </section>
+
+    <!-- Buenas prácticas -->
+    <section class="card">
+      <h2>Buenas Prácticas</h2>
+      <ul>
+        <li>Escribir comentarios claros, breves y útiles.</li>
+        <li>Actualizar la documentación cuando cambie el código.</li>
+        <li>Evitar comentar lo obvio.</li>
+        <li>Usar un formato estándar (ej. JSDoc en JavaScript).</li>
+      </ul>
+    </section>
+
+    <!-- Relación con control de versiones -->
+    <section class="card">
+      <h2>Documentación y Control de Versiones</h2>
+      <p>Los sistemas como Git permiten incluir documentación junto con los cambios de código, asegurando que siempre esté actualizada.  
+      Ejemplos:</p>
+      <pre><code># Crear un commit con mensaje descriptivo
+git commit -m "Agregada documentación a la función calcularTotal"
+
+# Subir cambios documentados al repositorio remoto
+git push origin main
+</code></pre>
+    </section>
+
+    <!-- Tabla de herramientas -->
+    <section class="card">
+      <h2>Herramientas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Herramienta</th>
+            <th>Uso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JSDoc</td>
+            <td>Generar documentación automática para proyectos JavaScript.</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>Controlar cambios en el código y documentación.</td>
+          </tr>
+          <tr>
+            <td>Markdown</td>
+            <td>Escribir documentación legible y bien formateada.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ejercicio interactivo -->
+    <section class="card">
+      <h2>Evaluación de Comentarios</h2>
+      <p>Observa este comentario y decide si es una buena práctica:</p>
+      <pre><code>// Esta función suma dos números
+function add(a, b) {
+  return a + b;
+}</code></pre>
+      <button class="primary" onclick="evaluarDoc(true)">✅ Sí, es buena</button>
+      <button class="warn" onclick="evaluarDoc(false)">❌ No, es mala</button>
+      <p id="resultado" class="muted"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Documentación y Control de Versiones ArlexAmado Sena 2885525</small>
+    </div>
+  </footer>
+
+  <script src="/js/documentacion.js"></script>
+</body>
+</html>

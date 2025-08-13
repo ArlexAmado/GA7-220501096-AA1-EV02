@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buenas Prácticas de Codificación - JavaScript</title>
+  <link rel="stylesheet" href="/css/buenas-practicas.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Buenas Prácticas de Codificación</h1>
+      <p class="lead">Guía interactiva para escribir código limpio, legible y fácil de mantener en JavaScript.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introducción -->
+    <section class="card">
+      <h2>Introducción</h2>
+      <p>Las buenas prácticas de codificación ayudan a garantizar que el software sea entendible, mantenible y menos propenso a errores. 
+      Adoptar un estilo de código consistente facilita el trabajo en equipo y acelera el desarrollo.</p>
+    </section>
+
+    <!-- Lista de prácticas -->
+    <section class="card">
+      <h2>Principales Buenas Prácticas</h2>
+      <ul>
+        <li>Usar nombres descriptivos para variables y funciones.</li>
+        <li>Seguir un estilo de identación consistente.</li>
+        <li>Comentar el código cuando sea necesario.</li>
+        <li>Evitar funciones demasiado largas.</li>
+        <li>Usar constantes para valores que no cambian.</li>
+        <li>Validar entradas antes de procesarlas.</li>
+      </ul>
+    </section>
+
+    <!-- Ejemplos -->
+    <section class="card">
+      <h2>Ejemplos Correctos e Incorrectos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Incorrecto</th>
+            <th>Correcto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><pre><code>let x = 1;
+let y = 2;
+let z = x + y;</code></pre></td>
+            <td><pre><code>let numUsuarios = 1;
+let numAdmins = 2;
+let total = numUsuarios + numAdmins;</code></pre></td>
+          </tr>
+          <tr>
+            <td><pre><code>function a(b) {
+return b*2;}</code></pre></td>
+            <td><pre><code>function duplicarValor(valor) {
+  return valor * 2;
+}</code></pre></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Ejercicio interactivo -->
+    <section class="card">
+      <h2>Evalúa el Código</h2>
+      <p>Observa el siguiente fragmento de código y decide si sigue buenas prácticas:</p>
+      <pre id="codigo-evaluar"><code>let a = 10;
+let b = 20;
+function sum(x, y) {
+  return x + y;
+}
+console.log(sum(a,b));</code></pre>
+      <button class="primary" onclick="evaluar(true)">✅ Sí cumple</button>
+      <button class="warn" onclick="evaluar(false)">❌ No cumple</button>
+      <p id="resultado" class="muted"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Guía de Buenas Prácticas - JavaScript ArlexAmado Sena 2885525</small>
+    </div>
+  </footer>
+
+  <script src="/js/buenas-practicas.js"></script>
+</body>
+</html>
